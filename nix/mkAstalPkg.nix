@@ -31,16 +31,6 @@ pkgs: let
       description = "Astal Core library";
       docs_url = "https://aylur.github.io/libastal/io";
     };
-    "NM-1.0" = {
-      name = "NetworkManager";
-      description = "The standard Linux network configuration tool suite";
-      docs_url = "https://networkmanager.dev/docs/libnm/latest/";
-    };
-    "WP-0.5" = {
-      name = "WirePlumber";
-      description = "Modular session/policy manager for PipeWire";
-      docs_url = "https://pipewire.pages.freedesktop.org/wireplumber/";
-    };
   };
 
   urlmap = pkgs.writeText "urlmap" ''
@@ -52,10 +42,6 @@ pkgs: let
       ["Gtk" "https://docs.gtk.org/gtk3/"]
       ["GdkPixbuf" "https://docs.gtk.org/gdk-pixbuf/"]
       ["AstalIO" "https://aylur.github.io/libastal/io"]
-
-      # FIXME: these are not gi-docgen generated, therefore links are broken
-      ["NM" "https://networkmanager.dev/docs/libnm/latest/"]
-      ["WP" "https://pipewire.pages.freedesktop.org/wireplumber/"]
     ]}
   '';
 in

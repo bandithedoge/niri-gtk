@@ -34,9 +34,7 @@
     json-glib
     pam
     gvfs
-    networkmanager
     gdk-pixbuf
-    wireplumber
     libdbusmenu-gtk3
     wayland
     blueprint-compiler
